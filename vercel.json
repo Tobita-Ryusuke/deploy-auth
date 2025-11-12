@@ -1,13 +1,11 @@
 {
+  "version": 2,
   "functions": {
-    "test/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
+    "test/api/**/*.js": { "runtime": "nodejs18.x" }
   },
-  "builds": [
-    { "src": "test/api/**/*.js", "use": "@vercel/node" }
-  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "test/api/$1" }
+    { "src": "/signup",     "dest": "test/api/signup/index.js" },
+    { "src": "/users/(.*)", "dest": "test/api/users/[user_id].js" },
+    { "src": "/close",      "dest": "test/api/close/index.js" }
   ]
 }
