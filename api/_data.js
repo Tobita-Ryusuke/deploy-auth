@@ -1,9 +1,9 @@
 const users = {
-  "TaroYamada": {
+  TaroYamada: {
     user_id: "TaroYamada",
-    password: "PaSsWd4TY",
+    password: "PaSSwd4TY",
     nickname: "たろー",
-    comment: "僕は元気です"
-  }
+    comment: "僕は元気です",
+  },
 };
 module.exports = users;
